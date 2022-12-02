@@ -1,0 +1,394 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  
+    <link rel="stylesheet" href="/static/css/styler.62e55a2c78cb.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js" integrity="sha384-3Nqiqht3ZZEO8FKj7GR1upiI385J92VwWNLj+FqHxtLYxd9l+WYpeqSOrLh0T12c" crossorigin="anonymous"></script>
+
+    <title>
+Features We Provide | Comparekart
+</title>
+    <style media="screen">
+        .loader {
+      position: fixed;
+      z-index: 99;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .loader > img {
+      width: 100px;
+    }
+
+    .loader.hidden {
+      animation: fadeOut 1s;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes fadeOut {
+      100% {
+          opacity: 0;
+          visibility: hidden;
+      }
+    }
+
+    .thumb {
+      height: 100px;
+      border: 1px solid black;
+      margin: 10px;
+    }
+    .bg-white {
+    background-color: #fff!important;
+}
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+.navbar-light .navbar-brand {
+    color: rgba(0,0,0,.9);
+}
+.navbar-brand {
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+.navbar-light .navbar-toggler {
+    color: rgba(0,0,0,.5);
+    border-color: rgba(0,0,0,.1);
+}
+.navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.new_footer_area {
+    background: #fbfbfd;
+}
+.new_footer_top {
+    padding: 120px 0px 270px;
+    position: relative;
+    overflow-x: hidden;
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.footer_bottom {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #7f88a6;
+    padding: 27px 0px;
+}
+.f_widget.about-widget .f_list {
+    margin-bottom: 0px;
+}
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+.new_footer_top .f-title {
+    margin-bottom: 30px;
+    color: #263b5e;
+}
+.f_size_18 {
+    font-size: 18px;
+}
+.f_600 {
+    font-weight: 700;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.new_footer_top .company_widget .f_subscribe_two .btn_get {
+    border-width: 1px;
+    margin-top: 20px;
+}
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+.btn_get_two {
+    padding: 10px;
+    margin-top: 15px;
+    box-shadow: none;
+    background: #5e2ced;
+    border-color: #5e2ced;
+    color: #fff;
+}
+.col-lg-3 .col-md-6{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.new_footer_top .f-title {
+    margin-bottom: 30px;
+    color: #263b5e;
+}
+.f_size_18 {
+    font-size: 18px;
+}
+.f_widget.about-widget .f_list {
+    margin-bottom: 0px;
+}
+.list-unstyled .f_list{
+    color: #263b5e;
+    padding-top:10px;
+    padding-bottom: 10px;
+    list-style: none;
+
+}
+.list-unstyled .f_list ul{
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.pg2{
+    padding:5px;
+    font-size:20px;
+    color: #495057;
+
+}
+a{
+    color: #7e8790;
+}
+.new_footer_area .footer_bg {
+    position: absolute;
+    bottom: 0;
+    background: url(http://droitthemes.com/html/saasland/img/seo/footer_bg.png) ;
+    background-repeat: no-repeat;
+    align-items:center;
+    width: 200%;
+    height: 266px;
+margin-left: 5%}
+.new_footer_area {
+    background: #fbfbfd;
+    
+}
+.new_footer_top {
+    padding: 120px 0px 270px;
+    position: relative;
+    overflow-x: hidden;
+}
+body{
+    background-color: #fbfbfd;
+}
+
+
+
+
+
+    </style>
+
+  </head>
+  <body>
+    
+    <div class="se-pre-con"></div>
+    <header>
+
+      <nav class="navbar navbar-expand-md navbar-light bg-white">
+        <a class="navbar-brand"   href="foot.html"> <img src="logo1.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav" >
+            <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="pg2.html">Features</a>
+            <a class="nav-link"  href="pg3.html">About us</a>
+            <a class="nav-link"  href="pg4.html">Feed Back</a>
+
+          </div>
+        </div>
+        </div>
+      </nav>
+
+    </header>
+    <!--- end of navbar-------------->
+<div class="container">
+  
+<div style="@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300&display=swap');font-family: 'Red Rose', cursive;"">
+
+
+<h3 style="text-align:center;align-content:center; align-self:center;">Features we provide</h3>
+<p >We offen spend too much time for comparing different website to grab best deals.Thus Comparekart made it easy for you, With Comparekart compares different website on single platform,thus saves your money & time.</p>
+<br>
+<ul style="padding-left:35%;">
+  <li>100% <strong>Free</strong> To Use</li>
+  <li>Compare Product easily</li>
+  <li>Very Quick- <strong>Save Time</strong></li>
+  <li>Grab Best Deal- <strong>Save Money</strong></li>
+  <li>User Friendly</li>
+
+</ul><br> <hr><br>
+
+
+</div>
+<section style="@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300&display=swap');font-family: 'Red Rose', cursive;">
+  <h3 style="text-align:center; ">With Comparekart Save Your Both Time & Money</h3>
+  <br><br>
+<div class="row">
+<div class="col-lg-5 col-sm-4 col col-md-5">
+<p >Tired by comparing prices from different website,With Comparekart compare your favourite product easily so that you can choose favourite product in best price and in less time  </p>
+</div>
+<div class="col-lg-7 col-sm-8 col col-md-7">
+  <img style="width:100%;height:auto;"src="pg2.jpg" alt="">
+</div>
+</div>
+</section>
+<hr><br><br>
+<section style="@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300&display=swap');font-family: 'Red Rose', cursive;">
+  <h3 style="text-align:center;">Grab The Best Deal</h3>
+  <br><br><br>
+  <div class="row">
+   <div class="col-lg-5 col-sm-4 col col-md-5">
+  <p >Why to buy same product for higher price ,Comparekart helps you to find best deals on your favourite products helps you to save lot of your money</p>
+   </div>
+   <div class="col-lg-7 col-sm-8 col col-md-7">
+     <img style="width:100%; height:auto;"src="log3.jpg" alt="">
+   </div>
+  </div>
+
+</section>
+
+
+</div>
+
+<br><br><br><br><br><br><br><br>
+
+
+<footer class="new_footer_area bg_color">
+    <div class="new_footer_top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div>
+                        <h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3>
+                        <p style="color:#7f88a6;">Don't miss any updates of our new templates and extensions.!</p>
+                        <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
+                            <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
+                            <button class="btn btn_get btn_get_two" type="submit">Subscribe</button>
+                            <input type="hidden" name="csrfmiddlewaretoken" value="6LRhgp2VQCQpeh9GqNTCOZNgr8VwP2UfWoJqHHfrgxZ564ikSXZn79YEKwrV7xjc">
+                            <p class="mchimp-errmessage" style="display: none;"></p>
+                            <p class="mchimp-sucmessage" style="display: none;"></p>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                   
+                        <h3 class="f-title f_600 t_color f_size_18">Download</h3>
+                        <ul class="list-unstyled f_list">
+                            <li class="pg2"><a href="#">Company</a></li>
+                            <li class="pg2"><a href="#">Android App</a></li>
+                            <li class="pg2"><a href="#">ios App</a></li>
+                            <li class="pg2"><a href="#">Desktop</a></li>
+                            <li class="pg2"><a href="#">Projects</a></li>
+                            <li class="pg2"><a href="#">My tasks</a></li>
+                        </ul>
+                    
+                </div>
+                <div class="col-lg-3 col-md-6">
+                   
+                        <h3 class="f-title f_600 t_color f_size_18">Help</h3>
+                        <ul class="list-unstyled f_list">
+                            <li class="pg2"><a href="#">FAQ</a></li>
+                            <li class="pg2"><a href="#">Term &amp; conditions</a></li>
+                            <li class="pg2"><a href="#">Reporting</a></li>
+                            <li class="pg2"><a href="#">Documentation</a></li>
+                            <li class="pg2"><a href="#">Support Policy</a></li>
+                            <li class="pg2"><a href="#">Privacy</a></li>
+                        </ul>
+                    
+                </div>
+                <div class="col-lg-3 col-md-6">
+                   
+                        <h3 class="f-title f_600 t_color f_size_18">Team Solutions</h3>
+                        <div class="f_social_icon">
+                            <a href="#" class="fab fa-facebook"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-linkedin"></a>
+                            <a href="#" class="fab fa-pinterest"></a>
+                        </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+        <div class="footer_bg"></div>
+      
+    </div>
+  
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+
+
+
+    </script>
+  </body>
+
+</html>

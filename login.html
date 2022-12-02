@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Rose&display=swap" rel="stylesheet">
+  
+</head>
+<style>
+body {
+    background-color: black;
+    position: absolute;
+    margin-left: 200px;
+}
+
+#loginwith {
+    color: red;
+    font-family: 'Red Rose', cursive;
+    text-align: center;
+    font-weight: 900px;
+    font-size: 60px;
+}
+
+.google {
+    font-family: 'Red Rose', cursive;
+    font-size: 20px;
+    color: white;
+    background-color: red;
+    display: inline;
+    border-radius: 12px;
+    padding: 8px 30px 8px 30px;
+    margin-left: 65px;
+    border: none;
+    cursor: pointer;
+    border-style: outset;
+}
+
+.google:hover {
+    text-decoration: underline;
+    background-color: rgb(255, 88, 88);
+}
+
+.facebook {
+    font-family: 'Red Rose', cursive;
+    font-size: 20px;
+    color: white;
+    background-color: #3B5998;
+    display: inline;
+    /* padding: 8px; */
+    padding: 8px 30px 8px 30px;
+    border-radius: 12px;
+    margin-left: 230px;
+    border: none;
+    cursor: pointer;
+    border-style: outset;
+}
+
+.facebook:hover {
+    text-decoration: underline;
+    background-color: rgb(67, 67, 109);
+}
+
+.gf {
+    margin-left: 10px;
+}
+
+.main {
+    background-color: rgb(254, 88, 88);
+    padding-bottom: 300px;
+    border-radius: 12px;
+    margin-left: 10px;
+    margin-right: 350px;
+    position: relative;
+    width: 650px;
+    height: 30px;
+    justify-content: center;
+
+}
+
+.email {
+    top: -10px;
+    display: block;
+    position: absolute;
+    margin-left: 25px;
+    margin-top: 30px;
+    border-radius: 12px;
+    width: 570px;
+    height: 35px;
+    border: none;
+}
+
+.email svg {
+    top: 10px;
+}
+
+.email::placeholder {
+    color: rgb(142, 142, 142);
+    font-size: 18px;
+    font-family: 'Red Rose', cursive;
+}
+
+.img {
+    margin-top: 43px;
+    margin-left: 10px;
+    display: block;
+    position: absolute;
+    color: rgb(142, 142, 142);
+}
+
+.img2 {
+    width: 30px;
+    height: 30px;
+    margin-top: 80px;
+    margin-left: 10px;
+    position: absolute;
+    
+}
+
+#pass {
+    margin-top: 125px;
+   
+    margin-left: 50px;
+    border: none;
+    position: absolute;
+   
+}
+
+.login {
+    background-color: red;
+    padding: 5px 97px 5px 98px;
+    color: white;
+    font-family: 'Red Rose', cursive;
+    margin-left: 211px;
+    font-size: 25px;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    position: fixed;
+    margin-top: 100px;
+    border-style: outset;
+}
+
+.login:hover {
+    text-decoration: underline;
+    background-color: rgb(146, 4, 4);
+}
+
+.fp {
+    background-color: rgb(255, 0, 0);
+    padding: 5px 30px 5px 30px;
+    color: white;
+    font-family: 'Red Rose', cursive;
+    margin-left: 210px;
+    font-size: 25px;
+    border-radius: 12px;
+    cursor: pointer;
+    border: none;
+    position: fixed;
+    margin-top: 100px;
+    border-style: outset;
+}
+
+.fp:hover {
+    text-decoration: underline;
+    background-color: rgb(146, 4, 4);
+}
+
+.bottom {
+    background-color: rgb(254, 88, 88);
+    margin-top: -25px;
+    text-align: center;
+    display: block;
+    width: 650px;
+    margin-left: 10px;
+    border-radius: 12px;
+    height: 32px;
+    color: white;
+    font-family: 'Red Rose', cursive;
+    font-size: 20px;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+.bottom:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.loginarea {
+    position: relative;
+}
+
+.bg {
+    background-color: white;
+    position: relative;
+    width: 670px;
+    margin-left: 260px;
+    border-radius: 20px;
+    padding-bottom: 10px;
+}
+
+.close {
+    position: relative;
+    float: right;
+    margin-top: -85px;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: none;
+    color:rgb(137, 137, 137);
+    margin-right: 9px;
+    padding: 2px 20px;
+}
+
+.close:hover{
+    background-color: red;
+    border-radius: 12px;
+    color: rgb(0, 0, 0);
+}
+</style>
+
+<body>
+    <div class="bg">
+        <div class="loginarea"></div>
+            <div class="loginwith" id="loginwith">Login with</div><br>
+            <a class="close" href="home1.html">&times;</a>
+            <div class="gf">
+                <button class="google">Google+</button>
+                <button class="facebook">Facebook</button>
+                <div class="loginwith" id="loginwith">or</div>
+            </div>
+
+            <div class="main">
+
+                <div class="img" id="eimg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30"
+                        height="30">
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path
+                            d="M3 3h18a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm9.06 8.683L5.648 6.238 4.353 7.762l7.72 6.555 7.581-6.56-1.308-1.513-6.285 5.439z" />
+                    </svg></div>
+
+                <div class="email">
+                    <input class="email" type="email" placeholder="      Enter Your Email">
+
+                </div><br><br>
+
+                <div class="img2" id="pimg"><img src="lock-fill.png" width="30" height="30">
+                </div>
+
+                <div class="pass">
+                    <input class="email" id="pass" type="password" placeholder="      Enter Your Password">
+                </div><br><br><br>
+
+                <button class="login">Log In</button>
+                <br>
+                <br><br><br>
+
+                <button class="fp">Forgot Password</button>
+            </div><br><br>
+
+            <div class="bottom" id="last">Don't have an account? Register</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
